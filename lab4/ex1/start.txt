@@ -1,0 +1,12 @@
+Компилируй
+g++ -std=c++20 -pthread \
+    -I../benchmark/include \
+    main_all.cpp \
+    ../benchmark/build/src/libbenchmark.a \
+    -lpthread \
+    -o benchmark_all
+
+Запусти
+./benchmark_all --benchmark_min_time=0.2s
+
+Скачать benchmark в корневую папку
